@@ -1,5 +1,54 @@
-<h2>players detail </h2>
+       
 
 
-{{player.name}}
-{{player.image}}
+
+
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Profile</title>
+    <link rel="stylesheet" href="{% static 'css/sasa.css' %}">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="left-section">
+            <div class="player-image">
+                <img src="player.jpg" alt="Player Photo">
+            </div>
+            <div class="player-details">
+                <h2>Lionel Messi</h2>
+                <p><strong>Age:</strong> 36</p>
+                <p><strong>Height:</strong> 1.70 m</p>
+                <p><strong>Weight:</strong> 72 kg</p>
+                <p><strong>Phone:</strong> +123456789</p>
+                <p><strong>Email:</strong> messi@example.com</p>
+            </div>
+        </div>
+
+        <!-- Right Main Content -->
+        <div class="right-section">
+            <div class="club-info card">
+                <h3>Previous Club: FC Barcelona</h3>
+                <p><strong>Joined:</strong> 2004</p>
+                <p><strong>Left:</strong> 2021</p>
+                <p><strong>Description:</strong> Spent the majority of his professional career at the club, winning multiple titles and setting records.</p>
+            </div>
+            <div class="video-section card">
+                <h3>Highlight Video</h3>
+                <video controls>
+                    <source src="highlight.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

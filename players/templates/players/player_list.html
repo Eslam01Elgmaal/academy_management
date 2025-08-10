@@ -6,19 +6,39 @@
 {% load static %}
 {% block body %}
 
+                <h2> player list </h2>
+                <br>
 
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                        <th scope="col">Photo</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Club</th>
+                        <th scope="col">Club Image</th>
+                        <th scope="col">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
 
-                    <!-- 404 Error Text -->
-                    <div class="text-center">
-                        <div class="error mx-auto" data-text="404">404</div>
-                        <p class="lead text-gray-800 mb-5">Page Not Found</p>
-                        <p class="text-gray-500 mb-0">It looks like you found a glitch in the matrix...</p>
-                        <a href="index.html">&larr; Back to Dashboard</a>
-                    </div>
+                        <td>
+                            <img src="{% static 'img/undraw_profile.svg' %}" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;">
+                        </td>
+                        <td>Eslam</td>
+                        <td>24</td>
+                        <td>ALAHLY</td>
+                        <td>
+                            <img src="{% static 'img/alahly.png' %}" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;">
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm">View</button>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                </div>
 
 
 
